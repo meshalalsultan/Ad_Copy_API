@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <title>نموذج إنشاء إعلان</title>
+</head>
+<body>
+    <h1>نموذج إنشاء إعلان بيعي</h1>
+    <form action="/create_ad" method="post">
+        <label for="project_type">نوع النشاط التجاري:</label><br>
+        <input type="text" id="project_type" name="project_type" required><br>
+        <small>وصف قصير لنوع النشاط التجاري (مثال: متجر إلكتروني، مطعم، صالون تجميل، شركة برمجيات، إلخ).</small><br><br>
+        
+        <label for="features">ميزات النشاط التجاري:</label><br>
+        <textarea id="features" name="features" required></textarea><br>
+        <small>ما الذي يجعل هذا النشاط التجاري مميزًا؟ (مثال: موقع ممتاز، قاعدة عملاء واسعة، منتجات أو خدمات فريدة، إلخ).</small><br><br>
+        
+        <label for="target_audience">الجمهور المستهدف:</label><br>
+        <input type="text" id="target_audience" name="target_audience" required><br>
+        <small>من هم العملاء المستهدفون؟ (مثال: العائلات، الشباب، الشركات الصغيرة والمتوسطة، إلخ).</small><br><br>
+        
+        <label for="languages">اللغات المدعومة:</label><br>
+        <input type="text" id="languages" name="languages" required><br>
+        <small>اللغات التي يمكن التعامل بها داخل النشاط التجاري (مثال: العربية، الإنجليزية، إلخ).</small><br><br>
+        
+        <label for="platforms">المنصات المدعومة:</label><br>
+        <input type="text" id="platforms" name="platforms" required><br>
+        <small>المنصات التي يتواجد عليها النشاط التجاري (مثال: موقع ويب، تطبيقات الهواتف الذكية، وسائل التواصل الاجتماعي، إلخ).</small><br><br>
+        
+        <label for="payment_methods">طرق الدفع المدعومة:</label><br>
+        <input type="text" id="payment_methods" name="payment_methods" required><br>
+        <small>الطرق المتاحة للعملاء للدفع (مثال: بطاقات الائتمان، الدفع النقدي، التحويل البنكي، الدفع الإلكتروني، إلخ).</small><br><br>
+
+        <label for="additional_info">معلومات إضافية:</label><br>
+        <textarea id="additional_info" name="additional_info"></textarea><br>
+        <small>أي تفاصيل إضافية قد تكون مفيدة للمشتري المحتمل (مثال: العائد السنوي، عدد الموظفين، سبب البيع، إلخ).</small><br><br>
+        
+        <button type="submit">إنشاء الإعلان</button>
+    </form>
+</body>
+</html>
